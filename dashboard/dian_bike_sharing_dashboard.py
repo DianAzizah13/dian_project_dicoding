@@ -170,7 +170,7 @@ option = st.sidebar.selectbox("Pilih visualisasi:",
                                "Pola Penggunaan dalam Hari",
                                "Pola Penggunaan dalam Jam"])
 
-all_data = pd.read_csv('all_data.csv')
+all_data = pd.read_csv('dashboard/all_data.csv')
 
 # Menampilkan visualisasi berdasarkan pilihan di sidebar
 if option == "Pola Pengguna Umum & Terdaftar":

@@ -170,12 +170,7 @@ option = st.sidebar.selectbox("Pilih visualisasi:",
                                "Pola Penggunaan dalam Hari",
                                "Pola Penggunaan dalam Jam"])
 
-# Membaca data (sesuaikan dengan path file)
-@st.cache_data
-def load_data():
-    return pd.read_csv('all_data.csv')
-
-all_data = load_data()
+all_data = pd.read_csv('all_data.csv')
 
 # Menampilkan visualisasi berdasarkan pilihan di sidebar
 if option == "Pola Pengguna Umum & Terdaftar":
